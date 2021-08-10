@@ -1,0 +1,11 @@
+{
+    "liveSassCompile.settings.generateMap": false,
+    "liveSassCompile.settings.formats": [
+
+        {
+            "format": "expanded",
+            "extensionName": ".min.css",
+            "savePath": "./cars-theme/css/"
+        }
+    ]
+}
