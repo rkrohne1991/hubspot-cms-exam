@@ -1,0 +1,10 @@
+[
+    {
+        "label": "Text Color",
+        "name": "text_color",
+        "type": "color",
+        "default": {
+            "color": "#000"
+        }
+    }
+]

@@ -1,0 +1,6 @@
+{
+    "label": "CMS Theme Cars",
+    "preview_path": "./templates/home.html",
+    "screenshot_path": "./images/template-previews/home.jpg",
+    "license": "./license.txt"
+}
