@@ -10,6 +10,7 @@
         <meta name="description" content="{{ page_meta.meta_description }}">
 
         {{ require_css(get_asset_url("../../css/bootstrap.min.css")) }}
+        {{ require_css(get_asset_url("../../css/bootstrap-icons.css")) }}
 
         {{ require_css(get_asset_url("../../css/main.css")) }}
 
@@ -35,6 +36,7 @@
             {% global_partial path='../partials/footer.html' %}
         {% endblock footer %}
     </div>
+    {{ require_js(get_asset_url('../../js/bootstrap.bundle.min.js')) }}
     {{ require_js(get_asset_url('../../js/main.js')) }}
     {# To see a full list of what is included via standard_footer_includes please reference this article: https://developers.hubspot.com/docs/cms/hubl/variables#required-page-template-variables #}
     
