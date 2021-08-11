@@ -9,9 +9,6 @@
         {% if site_settings.favicon_src %}<link rel="shortcut icon" href="{{ site_settings.favicon_src }}" />{% endif %}
         <meta name="description" content="{{ page_meta.meta_description }}">
 
-        {{ require_css(get_asset_url("../../css/bootstrap-reboot.min.css")) }}
-        {{ require_css(get_asset_url("../../css/bootstrap-utilities.min.css")) }}
-        {{ require_css(get_asset_url("../../css/bootstrap-grid.min.css")) }}
         {{ require_css(get_asset_url("../../css/bootstrap.min.css")) }}
 
         {{ require_css(get_asset_url("../../css/main.css")) }}

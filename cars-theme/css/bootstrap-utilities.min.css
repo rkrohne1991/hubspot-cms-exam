@@ -4,6 +4,8 @@
  * Copyright 2011-2021 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@500&display=swap");
 .clearfix::after {
   display: block;
   clear: both;
@@ -11,11 +13,11 @@
 }
 
 .link-primary {
-  color: #0d6efd;
+  color: #37517e;
 }
 
 .link-primary:hover, .link-primary:focus {
-  color: #0a58ca;
+  color: #2c4165;
 }
 
 .link-secondary {
@@ -509,7 +511,7 @@
 }
 
 .border-primary {
-  border-color: #0d6efd !important;
+  border-color: #37517e !important;
 }
 
 .border-secondary {

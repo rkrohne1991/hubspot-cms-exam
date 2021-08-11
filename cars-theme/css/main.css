@@ -1,4 +1,14 @@
-* {
+/* #hero {
+    width: 100%;
+    height: 80vh;
+    background: #37517e;
+} */
+
+
+
+/*  old code below  */
+
+/* * {
     box-sizing: border-box;
     font-family: Helvetica, sans-serif;
 }
@@ -17,9 +27,9 @@ body {
     background-color: #ddd;
     padding: 1rem;
     min-height: 100vh;
-}
+} */
 
-header {
+/* header {
     text-transform: uppercase;
     letter-spacing: .3em;
     background-color: #eee;
@@ -28,4 +38,4 @@ header {
     color: #fff;
     padding: 1em 50% 1em 2em;
     margin-bottom: 3em;
-}
+} */
