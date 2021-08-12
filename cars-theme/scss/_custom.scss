@@ -14,6 +14,8 @@ section {
 }
 
 .navbar {
+    padding: 0;
+
     ul {
         margin: 0;
         padding: 0;
@@ -137,6 +139,26 @@ section {
         background: $secondary_light;
         color: $white;
     }
+}
+
+.partner-logos {
+    padding: 12px 0;
+    text-align: center;
+    background-color: $gray-100;
+
+    &__logo {
+        max-width: 45%;
+        transition: all 0.4s ease-in-out;
+        display: inline-block;
+        padding: 15px 0;
+        filter: grayscale(100);
+
+        &:hover {
+            filter: none;
+            transform: scale(1.1);
+        }
+    }
+
 }
 
 #header {

@@ -11952,6 +11952,10 @@ section {
   overflow: hidden;
 }
 
+.navbar {
+  padding: 0;
+}
+
 .navbar ul {
   margin: 0;
   padding: 0;
@@ -12089,6 +12093,29 @@ section {
 .back-to-top:hover {
   background: #6bc1e9;
   color: #fff;
+}
+
+.partner-logos {
+  padding: 12px 0;
+  text-align: center;
+  background-color: #f3f5fa;
+}
+
+.partner-logos__logo {
+  max-width: 45%;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  display: inline-block;
+  padding: 15px 0;
+  -webkit-filter: grayscale(100);
+          filter: grayscale(100);
+}
+
+.partner-logos__logo:hover {
+  -webkit-filter: none;
+          filter: none;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 #header {

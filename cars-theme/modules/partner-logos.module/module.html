@@ -1,7 +1,31 @@
 {% set gallery = [] %}
 
-<div class="row">
-  {% for image in module.gallery %}
-    <div>{{ image }}</div>
-  {% endfor %}
+<div class="partner-logos">
+  <div class="container">
+    <div class="row">
+      {% for image in module.gallery %}
+
+        {% if (image.link_url is string_startingwith "http") or (image.link_url is string_startingwith "/") %}
+          {% set link = image.link_url %}
+        {% elif !image.link_url %}
+          {% set link = none %}
+        {% else %}
+          {% set link = "//" ~ image.link_url %}
+        {% endif %}
+
+        <div class="col-lg col-md-4 col-6 d-flex align-items-center justify-content-center">
+          {% if (image.link_url) %}
+            <a href="{{ image.link_url }}" target="blank">
+          {% endif %}
+
+            <img class="img-fluid partner-logos__logo" src="{{ image.image_field.src }}" alt="{{ image.image_field.alt }}">
+
+          {% if (image.link_url) %}
+            </a>
+          {% endif %}
+        </div>
+
+      {% endfor %}
+    </div>
+  </div>
 </div>
