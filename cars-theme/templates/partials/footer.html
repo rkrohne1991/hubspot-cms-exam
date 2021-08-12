@@ -3,6 +3,31 @@
     label: Website footer
 -->
 
-<footer>
-    <h1>Footer</h1>
+<footer id="footer">
+    <div class="footer-newsletter">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <h4>Join Our Newsletter</h4>
+                    <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
+                    {% module "form" path="@hubspot/form" %}
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-top">
+        <div class="container">
+            <div class="row">
+                <div class="col footer-contact">
+                    <h3>Cars</h3>
+                    {% module "rich_text" path="@hubspot/rich_text" %}
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container footer-bottom clearfix">
+        <div class="copyright">
+          © Copyright <strong><span>Cars</span></strong>. All Rights Reserved
+        </div>
+    </div>
 </footer>
