@@ -1,0 +1,51 @@
+[ {
+  "id" : "c0cd419b-a969-a109-0779-e76a42d45459",
+  "name" : "gallery",
+  "label" : "Gallery",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : 1,
+    "max" : 6,
+    "sorting_label_field" : "9cb63e11-6acd-a3b0-4e6c-6f1de46977d2",
+    "default" : null
+  },
+  "children" : [ {
+    "id" : "9cb63e11-6acd-a3b0-4e6c-6f1de46977d2",
+    "name" : "image_field",
+    "label" : "Image",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "",
+      "alt" : null,
+      "loading" : "lazy"
+    }
+  }, {
+    "id" : "b7cbf9b9-5e22-6a32-e635-1245ab7c2194",
+    "name" : "link_url",
+    "label" : "Link URL",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : [ {
+    "image_field" : {
+      "size_type" : "auto",
+      "src" : "",
+      "alt" : null,
+      "loading" : "lazy"
+    }
+  } ]
+} ]

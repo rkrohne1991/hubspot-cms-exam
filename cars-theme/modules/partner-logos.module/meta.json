@@ -1,0 +1,8 @@
+{
+  "global" : false,
+  "icon" : "fontawesome-5.14.0:Images",
+  "host_template_types" : [ "PAGE" ],
+  "module_id" : 43179762645,
+  "label" : "Partner Logos",
+  "is_available_for_new_content" : true
+}
