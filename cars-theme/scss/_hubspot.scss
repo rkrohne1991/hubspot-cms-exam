@@ -1,0 +1,352 @@
+.dnd-section {
+    padding: 60px 0;
+
+    & > .row-fluid:first-of-type {
+        @extend .row;
+    }
+
+}
+
+.dnd-row {
+    & > .row-fluid:first-of-type {
+        @extend .row;
+    }
+}
+
+// .row-fluid-wrapper {
+//     @extend .row;
+
+//     & > .row-fluid {
+//         padding: 0;
+//     }
+// }
+
+.row {
+    &-fluid {
+        // @extend .row;
+
+        .span12, 
+        .span11, 
+        .span10, 
+        .span9, 
+        .span8, 
+        .span7, 
+        .span6, 
+        .span5,
+        .span4,
+        .span3,
+        .span2,
+        .span1 {
+            justify-content: flex-start !important;
+        }
+
+        .span12 {
+            @extend .col-12;
+            justify-content: flex-start;
+
+            // @include media-breakpoint-up(sm) { 
+            //     @extend .col-sm-12;
+            // }
+
+            // @include media-breakpoint-up(md) { 
+            //     @extend .col-md-12;
+            // }
+
+            // @include media-breakpoint-up(lg) {
+            //     @extend .col-lg-12;
+            // }
+
+            // @include media-breakpoint-up(xl) {
+            //     @extend .col-xl-12;
+            // }
+
+            // @include media-breakpoint-up(xxl) {
+            //     @extend .col-xxl-12;
+            // }
+        }
+        
+        // .span11 {
+        //     @extend .col-11;
+
+        //     @include media-breakpoint-up(sm) { 
+        //         @extend .col-sm-11;
+        //     }
+
+        //     @include media-breakpoint-up(md) { 
+        //         @extend .col-md-11;
+        //     }
+
+        //     @include media-breakpoint-up(lg) {
+        //         @extend .col-lg-11;
+        //     }
+
+        //     @include media-breakpoint-up(xl) {
+        //         @extend .col-xl-11;
+        //     }
+
+        //     @include media-breakpoint-up(xxl) {
+        //         @extend .col-xxl-11;
+        //     }
+        // }
+        
+        // .span10 {
+        //     @extend .col-10;
+
+        //     @include media-breakpoint-up(sm) { 
+        //         @extend .col-sm-10;
+        //     }
+
+        //     @include media-breakpoint-up(md) { 
+        //         @extend .col-md-10;
+        //     }
+
+        //     @include media-breakpoint-up(lg) {
+        //         @extend .col-lg-10;
+        //     }
+
+        //     @include media-breakpoint-up(xl) {
+        //         @extend .col-xl-10;
+        //     }
+
+        //     @include media-breakpoint-up(xxl) {
+        //         @extend .col-xxl-10;
+        //     }
+        // }
+        
+        // .span9 {
+        //     @extend .col-9;
+
+        //     @include media-breakpoint-up(sm) { 
+        //         @extend .col-sm-9;
+        //     }
+
+        //     @include media-breakpoint-up(md) { 
+        //         @extend .col-md-9;
+        //     }
+
+        //     @include media-breakpoint-up(lg) {
+        //         @extend .col-lg-9;
+        //     }
+
+        //     @include media-breakpoint-up(xl) {
+        //         @extend .col-xl-9;
+        //     }
+
+        //     @include media-breakpoint-up(xxl) {
+        //         @extend .col-xxl-9;
+        //     }
+        // }
+        
+        // .span8 {
+        //     @extend .col-8;
+
+        //     @include media-breakpoint-up(sm) { 
+        //         @extend .col-sm-8;
+        //     }
+
+        //     @include media-breakpoint-up(md) { 
+        //         @extend .col-md-8;
+        //     }
+
+        //     @include media-breakpoint-up(lg) {
+        //         @extend .col-lg-8;
+        //     }
+
+        //     @include media-breakpoint-up(xl) {
+        //         @extend .col-xl-8;
+        //     }
+
+        //     @include media-breakpoint-up(xxl) {
+        //         @extend .col-xxl-8;
+        //     }
+        // }
+        
+        // .span7 {
+        //     @extend .col-7;
+
+        //     @include media-breakpoint-up(sm) { 
+        //         @extend .col-sm-7;
+        //     }
+
+        //     @include media-breakpoint-up(md) { 
+        //         @extend .col-md-7;
+        //     }
+
+        //     @include media-breakpoint-up(lg) {
+        //         @extend .col-lg-7;
+        //     }
+
+        //     @include media-breakpoint-up(xl) {
+        //         @extend .col-xl-7;
+        //     }
+
+        //     @include media-breakpoint-up(xxl) {
+        //         @extend .col-xxl-7;
+        //     }
+        // }
+        
+        .span6 {
+            // @extend .col-6;
+            -webkit-box-flex: 0 !important;
+            -ms-flex: 0 0 auto !important;
+            flex: 0 0 auto !important;
+            width: 100% !important;
+
+            // @include media-breakpoint-up(sm) { 
+            //     @extend .col-sm-6;
+            // }
+
+            // @include media-breakpoint-up(md) { 
+            //     @extend .col-md-6;
+            // }
+
+            @include media-breakpoint-up(lg) {
+                -webkit-box-flex: 0 !important;
+                -ms-flex: 0 0 auto !important;
+                flex: 0 0 auto !important;
+                width: 50% !important;
+            }
+
+            // @include media-breakpoint-up(xl) {
+            //     @extend .col-xl-6;
+            // }
+
+            // @include media-breakpoint-up(xxl) {
+            //     @extend .col-xxl-6;
+            // }
+        }
+        
+        // .span5 {
+        //     @extend .col-5;
+
+        //     @include media-breakpoint-up(sm) { 
+        //         @extend .col-sm-5;
+        //     }
+
+        //     @include media-breakpoint-up(md) { 
+        //         @extend .col-md-5;
+        //     }
+
+        //     @include media-breakpoint-up(lg) {
+        //         @extend .col-lg-5;
+        //     }
+
+        //     @include media-breakpoint-up(xl) {
+        //         @extend .col-xl-5;
+        //     }
+
+        //     @include media-breakpoint-up(xxl) {
+        //         @extend .col-xxl-5;
+        //     }
+        // }
+        
+        // .span4 {
+        //     @extend .col-4;
+
+        //     @include media-breakpoint-up(sm) { 
+        //         @extend .col-sm-4;
+        //     }
+
+        //     @include media-breakpoint-up(md) { 
+        //         @extend .col-md-4;
+        //     }
+
+        //     @include media-breakpoint-up(lg) {
+        //         @extend .col-lg-4;
+        //     }
+
+        //     @include media-breakpoint-up(xl) {
+        //         @extend .col-xl-4;
+        //     }
+
+        //     @include media-breakpoint-up(xxl) {
+        //         @extend .col-xxl-4;
+        //     }
+        // }
+        
+        // .span3 {
+        //     @extend .col-3;
+
+        //     @include media-breakpoint-up(sm) { 
+        //         @extend .col-sm-3;
+        //     }
+
+        //     @include media-breakpoint-up(md) { 
+        //         @extend .col-md-3;
+        //     }
+
+        //     @include media-breakpoint-up(lg) {
+        //         @extend .col-lg-3;
+        //     }
+
+        //     @include media-breakpoint-up(xl) {
+        //         @extend .col-xl-3;
+        //     }
+
+        //     @include media-breakpoint-up(xxl) {
+        //         @extend .col-xxl-3;
+        //     }
+        // }
+        
+        // .span2 {
+        //     @extend .col-2;
+
+        //     @include media-breakpoint-up(sm) { 
+        //         @extend .col-sm-2;
+        //     }
+
+        //     @include media-breakpoint-up(md) { 
+        //         @extend .col-md-2;
+        //     }
+
+        //     @include media-breakpoint-up(lg) {
+        //         @extend .col-lg-2;
+        //     }
+
+        //     @include media-breakpoint-up(xl) {
+        //         @extend .col-xl-2;
+        //     }
+
+        //     @include media-breakpoint-up(xxl) {
+        //         @extend .col-xxl-2;
+        //     }
+        // }
+        
+        // .span1 {
+        //     @extend .col-1;
+
+        //     @include media-breakpoint-up(sm) { 
+        //         @extend .col-sm-1;
+        //     }
+
+        //     @include media-breakpoint-up(md) { 
+        //         @extend .col-md-1;
+        //     }
+
+        //     @include media-breakpoint-up(lg) {
+        //         @extend .col-lg-1;
+        //     }
+
+        //     @include media-breakpoint-up(xl) {
+        //         @extend .col-xl-1;
+        //     }
+
+        //     @include media-breakpoint-up(xxl) {
+        //         @extend .col-xxl-1;
+        //     }
+        // }
+    }
+
+    [class*="span"] {
+        @extend .col;
+    }
+}
+
+.hs {
+    &_cos_wrapper {
+        &_type_header {
+            @extend .section-title;
+            display: block;
+        }
+    }
+}
