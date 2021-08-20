@@ -12168,6 +12168,19 @@ fieldset:disabled .btn {
   line-height: 1;
 }
 
+.team {
+  margin: 0 -12px;
+}
+
+.team .container, .team .dnd-section {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.team .section-title, .team .hs_cos_wrapper_type_header {
+  padding-bottom: 5px;
+}
+
 .team .member {
   position: relative;
   -webkit-box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);

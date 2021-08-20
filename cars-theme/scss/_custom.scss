@@ -215,6 +215,18 @@ $transition3s:          .3s;
 }
 
 .team {
+    margin: 0 -12px;
+    
+    .container {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .section {
+        &-title {
+            padding-bottom: 5px;
+        }
+    }
     .member {
         position: relative;
         box-shadow: 0px 2px 15px rgba($black, 0.1);
