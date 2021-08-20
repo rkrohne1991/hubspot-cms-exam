@@ -12288,6 +12288,11 @@ fieldset:disabled .btn {
   font-size: 14px;
 }
 
+.team .member:hover {
+  -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
+}
+
 #header {
   -webkit-transition: all 0.5s;
   transition: all 0.5s;

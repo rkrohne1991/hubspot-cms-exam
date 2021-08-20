@@ -1,5 +1,5 @@
 <section id="team" class="team" style="background-color: rgba({{ module.background_section.color|convert_rgb }}, {{ module.background_section.opacity / 100 }});">
-  <div class="container">
+  <div class="container aos-init aos-animate" data-aos="fade-up">
     <div class="section-title">
       <h2>{% inline_text field="title" value="{{ module.title }}" %}</h2>
       {% inline_text field="intro" value="{{ module.intro }}" %}
@@ -7,7 +7,7 @@
     <div class="row">
       {% for member in module.members_group %}
       <div class="col-lg-6 mt-4">
-        <div class="member d-flex align-items-start">
+        <div class="member d-flex align-items-start aos-init aos-animate" data-aos="zoom-in" data-aos-delay="100">
           <div class="pic">
             <img class="img-fluid" src="{{ member.image_field.src }}" alt="{{ member.image_field.alt }}">
           </div>

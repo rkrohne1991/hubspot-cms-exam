@@ -216,7 +216,7 @@ $transition3s:          .3s;
 
 .team {
     margin: 0 -12px;
-    
+
     .container {
         padding-left: 10px;
         padding-right: 10px;
@@ -314,6 +314,10 @@ $transition3s:          .3s;
         p {
             margin: 10px 0 0 0;
             font-size: 14px;
+        }
+
+        &:hover {
+            transform: translateY(-10px);
         }
     }
 }
