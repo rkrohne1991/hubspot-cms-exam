@@ -1,0 +1,32 @@
+[ {
+  "id" : "dc212b1e-bcf8-e381-c26f-aa01a9fea9d1",
+  "name" : "title",
+  "label" : "Title",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text"
+}, {
+  "id" : "4b8b2ce6-f0e6-8a2b-e26b-a3659f017fc7",
+  "name" : "intro",
+  "label" : "Intro",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text"
+}, {
+  "id" : "3792a472-35a5-88d8-32ad-d92d2c64d71e",
+  "name" : "background_section",
+  "label" : "Background Section",
+  "required" : false,
+  "locked" : false,
+  "type" : "color",
+  "default" : {
+    "color" : "#f3f5fa",
+    "opacity" : 100
+  }
+} ]

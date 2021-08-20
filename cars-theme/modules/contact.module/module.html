@@ -1,0 +1,9 @@
+<section id="contact" class="contact" style="background-color: rgba({{ module.background_section.color|convert_rgb }}, {{ module.background_section.opacity / 100 }});">
+  <div class="container aos-init aos-animate" data-aos="fade-up">
+    <div class="section-title">
+      <h2>{% inline_text field="title" value="{{ module.title }}" %}</h2>
+      {% inline_text field="intro" value="{{ module.intro }}" %}
+    </div>
+   
+  </div>
+</section>
