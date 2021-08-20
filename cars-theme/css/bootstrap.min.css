@@ -639,7 +639,7 @@ progress {
   color: #6c757d;
 }
 
-.container,
+.container, .dnd-section,
 .container-fluid,
 .container-sm,
 .container-md,
@@ -654,31 +654,31 @@ progress {
 }
 
 @media (min-width: 576px) {
-  .container, .container-sm {
+  .container, .dnd-section, .container-sm {
     max-width: 540px;
   }
 }
 
 @media (min-width: 768px) {
-  .container, .container-sm, .container-md {
+  .container, .dnd-section, .container-sm, .container-md {
     max-width: 720px;
   }
 }
 
 @media (min-width: 992px) {
-  .container, .container-sm, .container-md, .container-lg {
+  .container, .dnd-section, .container-sm, .container-md, .container-lg {
     max-width: 960px;
   }
 }
 
 @media (min-width: 1200px) {
-  .container, .container-sm, .container-md, .container-lg, .container-xl {
+  .container, .dnd-section, .container-sm, .container-md, .container-lg, .container-xl {
     max-width: 1140px;
   }
 }
 
 @media (min-width: 1400px) {
-  .container, .container-sm, .container-md, .container-lg, .container-xl, .container-xxl {
+  .container, .dnd-section, .container-sm, .container-md, .container-lg, .container-xl, .container-xxl {
     max-width: 1320px;
   }
 }
@@ -4465,7 +4465,7 @@ fieldset:disabled .btn {
   padding-bottom: 0.5rem;
 }
 
-.navbar > .container,
+.navbar > .container, .navbar > .dnd-section,
 .navbar > .container-fluid, .navbar > .container-sm, .navbar > .container-md, .navbar > .container-lg, .navbar > .container-xl, .navbar > .container-xxl {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -12168,6 +12168,113 @@ fieldset:disabled .btn {
   line-height: 1;
 }
 
+.team .member {
+  position: relative;
+  -webkit-box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  border-radius: 5px;
+  background: #fff;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.team .member .pic {
+  overflow: hidden;
+  width: 180px;
+  border-radius: 50%;
+}
+
+.team .member .pic img {
+  -webkit-transition: ease-in-out 0.3s;
+  transition: ease-in-out 0.3s;
+  width: 173px;
+  height: 173px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.team .member .member-info {
+  padding-left: 30px;
+}
+
+.team .member .social {
+  margin-top: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.team .member .social a {
+  -webkit-transition: ease-in-out 0.3s;
+  transition: ease-in-out 0.3s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 50px;
+  width: 32px;
+  height: 32px;
+  background: #eff2f8;
+  margin-right: 10px;
+}
+
+.team .member .social a i {
+  color: #37517e;
+  font-size: 16px;
+  margin: 0 2px;
+}
+
+.team .member .social a:hover {
+  background: #47b2e4;
+}
+
+.team .member .social a:hover i {
+  color: #fff;
+}
+
+.team .member h4, .team .member .h4 {
+  font-weight: 700;
+  margin-bottom: 5px;
+  font-size: 20px;
+  color: #37517e;
+}
+
+.team .member span {
+  display: block;
+  font-size: 15px;
+  padding-bottom: 10px;
+  position: relative;
+  font-weight: 500;
+}
+
+.team .member span:after {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 50px;
+  height: 1px;
+  background: #cbd6e9;
+  bottom: 0;
+  left: 0;
+}
+
+.team .member p {
+  margin: 10px 0 0 0;
+  font-size: 14px;
+}
+
 #header {
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
@@ -12207,7 +12314,7 @@ fieldset:disabled .btn {
   }
 }
 
-#hero .container {
+#hero .container, #hero .dnd-section {
   padding-top: 72px;
 }
 
@@ -12298,6 +12405,10 @@ fieldset:disabled .btn {
           box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
 }
 
+#footer .footer-newsletter form input[type="submit"]:hover {
+  background: #209dd8;
+}
+
 #footer .footer-top {
   padding: 60px 0 30px 0;
   background: #fff;
@@ -12357,7 +12468,6 @@ fieldset:disabled .btn {
 
 section {
   padding: 60px 0;
-  overflow: hidden;
 }
 
 @-webkit-keyframes up-down {
@@ -12383,7 +12493,8 @@ section {
 }
 
 .dnd-section {
-  padding: 60px 0;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .row-fluid .span12,

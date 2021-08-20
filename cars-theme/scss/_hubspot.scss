@@ -1,5 +1,7 @@
 .dnd-section {
-    padding: 60px 0;
+    // padding: 60px 0;
+    padding-top: 60px;
+    padding-bottom: 60px;
 
     & > .row-fluid:first-of-type {
         @extend .row;
@@ -11,6 +13,14 @@
     & > .row-fluid:first-of-type {
         @extend .row;
     }
+}
+
+// .dnd-section:not(.row-number-6) {
+//     @extend .container;
+// }
+
+.dnd-section {
+    @extend .container;
 }
 
 // .row-fluid-wrapper {

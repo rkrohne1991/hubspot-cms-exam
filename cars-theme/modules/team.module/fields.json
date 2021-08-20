@@ -1,0 +1,65 @@
+[ {
+  "id" : "e373bc08-fa52-28c1-c0cf-e24238fb887a",
+  "name" : "members_group",
+  "label" : "Member",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "868e0cad-ff0d-a852-56f0-ba128ac18039",
+    "name" : "name_field",
+    "label" : "Name",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text"
+  }, {
+    "id" : "86432d38-8071-ee2e-6cde-98950716e344",
+    "name" : "profession_field",
+    "label" : "Profession",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text"
+  }, {
+    "id" : "42b16394-9807-f091-c352-65b4739e7b88",
+    "name" : "intro_field",
+    "label" : "Intro",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text"
+  }, {
+    "id" : "e0167d86-8879-e64f-f989-a5593e061471",
+    "name" : "image_field",
+    "label" : "Photo",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "",
+      "alt" : null,
+      "loading" : "lazy"
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "image_field" : {
+      "size_type" : "auto",
+      "src" : "",
+      "alt" : null,
+      "loading" : "lazy"
+    }
+  }
+} ]

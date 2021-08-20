@@ -2,11 +2,13 @@ $primary:             #37517e;
 $primary_transparent: rgba(40, 58, 90, 0.9);
 $secondary:           #47b2e4;
 $secondary_light:     #6bc1e9;
+$secondary_dark:      #209dd8;
 $white:               #fff;
 $black:               #000;
 $gray-100:            #f3f5fa;
 $gray-300:            #444444;
 $gray-400:            #5e5e5e;
+$transition3s:          .3s;
 
 .section {
     &-title {
@@ -72,7 +74,7 @@ $gray-400:            #5e5e5e;
                 font-weight: 500;
                 color: $white;
                 white-space: nowrap;
-                transition: 0.3s;
+                transition: $transition3s;
 
                 &:hover,
                 &.active,
@@ -96,7 +98,7 @@ $gray-400:            #5e5e5e;
     left: 0;
     bottom: 0;
     background: $primary_transparent;
-    transition: 0.3s;
+    transition: $transition3s;
     z-index: 999;
 
     .mobile-nav-toggle {
@@ -116,7 +118,7 @@ $gray-400:            #5e5e5e;
         border-radius: 10px;
         background-color: $white;
         overflow-y: auto;
-        transition: 0.3s;
+        transition: $transition3s;
 
         li {
             a {
@@ -207,10 +209,103 @@ $gray-400:            #5e5e5e;
         left: 0;
         top: 2px;
         font-size: 20px;
-        color: #47b2e4;
+        color: $secondary;
         line-height: 1;
     }
 }
+
+.team {
+    .member {
+        position: relative;
+        box-shadow: 0px 2px 15px rgba($black, 0.1);
+        padding: 30px;
+        border-radius: 5px;
+        background: $white;
+        transition: 0.5s;
+
+        .pic {
+            overflow: hidden;
+            width: 180px;
+            border-radius: 50%;
+
+            img {
+                transition: ease-in-out $transition3s;
+                width: 173px;
+                height: 173px;
+                object-fit: cover;
+            }
+        }
+
+        .member-info {
+            padding-left: 30px;
+        }
+
+        .social {
+            margin-top: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+
+            a {
+                transition: ease-in-out $transition3s;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 50px;
+                width: 32px;
+                height: 32px;
+                background: #eff2f8;
+                margin-right: 10px;
+
+                i {
+                    color: $primary;
+                    font-size: 16px;
+                    margin: 0 2px;
+                }
+
+                &:hover {
+                    background: $secondary;
+
+                    i {
+                        color: $white;
+                    }
+                }
+            }
+        }
+
+        h4 {
+            font-weight: 700;
+            margin-bottom: 5px;
+            font-size: 20px;
+            color: $primary;
+        }
+
+        span {
+            display: block;
+            font-size: 15px;
+            padding-bottom: 10px;
+            position: relative;
+            font-weight: 500;
+
+            &:after {
+                content: '';
+                position: absolute;
+                display: block;
+                width: 50px;
+                height: 1px;
+                background: #cbd6e9;
+                bottom: 0;
+                left: 0;
+            }
+        }
+
+        p {
+            margin: 10px 0 0 0;
+            font-size: 14px;
+        }
+    }
+}
+
 
 #header {
     transition: all 0.5s;
@@ -329,9 +424,13 @@ $gray-400:            #5e5e5e;
                 padding: 0 20px;
                 background: $secondary;
                 color: $white;
-                transition: 0.3s;
+                transition: $transition3s;
                 border-radius: 50px;
                 box-shadow: 0px 2px 15px rgba($black, 0.1);
+
+                &:hover {
+                    background: $secondary_dark;
+                }
             }
         }
     }
@@ -390,7 +489,9 @@ $gray-400:            #5e5e5e;
 
 section {
     padding: 60px 0;
-    overflow: hidden;
+    // padding-top: 60px;
+    // padding-bottom: 60px;
+    // overflow: hidden;
 }
 
 @-webkit-keyframes up-down {
