@@ -74,4 +74,10 @@
         onscroll(document, toggleBacktotop)
     }
 
+    let aboutSection = select('.row-fluid-wrapper.row-depth-1.row-number-1.dnd-section');
+    aboutSection.setAttribute('id', 'about');
+
+    let contactSection = select('.row-fluid-wrapper.row-depth-1.row-number-8.dnd-section');
+    contactSection.setAttribute('id', 'contact');
+
 })();
