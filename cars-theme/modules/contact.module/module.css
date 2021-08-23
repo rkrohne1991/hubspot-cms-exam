@@ -1,0 +1,21 @@
+.row-fluid-wrapper.row-depth-1.row-number-8.dnd-section {
+  max-width: unset;
+  padding: 0;
+}
+
+.row-fluid-wrapper.row-depth-1.row-number-8.dnd-section .row-fluid {
+  margin: 0;
+}
+
+.row-fluid-wrapper.row-depth-1.row-number-8.dnd-section
+  .row-fluid
+  .span12.widget-span.widget-type-cell.dnd-column {
+  padding: 0;
+}
+
+.row-fluid-wrapper.row-depth-1.row-number-8.dnd-section
+  .row-fluid
+  .span12.widget-span.widget-type-cell.dnd-column
+  .span12.widget-span.widget-type-custom_widget.dnd-module {
+  padding: 0;
+}

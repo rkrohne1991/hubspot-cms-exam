@@ -1,4 +1,8 @@
-<section id="team" class="team" style="background-color: rgba({{ module.background_section.color|convert_rgb }}, {{ module.background_section.opacity / 100 }});">
+<section
+  id="team"
+  class="team"
+  style="background-color: rgba({{ module.background_section.color|convert_rgb }}, {{ module.background_section.opacity / 100 }});"
+>
   <div class="container aos-init aos-animate" data-aos="fade-up">
     <div class="section-title">
       <h2>{% inline_text field="title" value="{{ module.title }}" %}</h2>
@@ -7,9 +11,17 @@
     <div class="row">
       {% for member in module.members_group %}
       <div class="col-lg-6 mt-4">
-        <div class="member d-flex align-items-start aos-init aos-animate" data-aos="zoom-in" data-aos-delay="100">
+        <div
+          class="member d-flex align-items-start aos-init aos-animate"
+          data-aos="zoom-in"
+          data-aos-delay="100"
+        >
           <div class="pic">
-            <img class="img-fluid" src="{{ member.image_field.src }}" alt="{{ member.image_field.alt }}">
+            <img
+              class="img-fluid"
+              src="{{ member.image_field.src }}"
+              alt="{{ member.image_field.alt }}"
+            />
           </div>
           <div class="member-info">
             <h4>{{ member.name_field }}</h4>
@@ -19,9 +31,9 @@
             {% if member.social_group %}
             <div class="social">
               {% for link in member.social_group %}
-                <a href="{{ link.url_field.href }}" target="_blank">
-                  {{ link.icon }}
-                </a>
+              <a href="{{ link.url_field.href }}" target="_blank">
+                {{ link.icon }}
+              </a>
               {% endfor %}
             </div>
             {% endif %}
