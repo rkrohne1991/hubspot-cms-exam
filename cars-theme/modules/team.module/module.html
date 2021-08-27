@@ -9,7 +9,7 @@
       {% inline_text field="intro" value="{{ module.intro }}" %}
     </div>
     <div class="row">
-      {% for member in module.members_group %}
+      {% for team in module.team_group %}
       <div class="col-lg-6 mt-4">
         <div
           class="member d-flex align-items-start aos-init aos-animate"
@@ -19,18 +19,18 @@
           <div class="pic">
             <img
               class="img-fluid"
-              src="{{ member.image_field.src }}"
-              alt="{{ member.image_field.alt }}"
+              src="{{ team.image_field.src }}"
+              alt="{{ team.image_field.alt }}"
             />
           </div>
           <div class="member-info">
-            <h4>{{ member.name_field }}</h4>
-            <span>{{ member.profession_field }}</span>
-            <p>{{ member.intro_field }}</p>
+            <h4>{{ team.name_field }}</h4>
+            <span>{{ team.profession_field }}</span>
+            <p>{{ team.intro_field }}</p>
 
-            {% if member.social_group %}
+            {% if team.social_group %}
             <div class="social">
-              {% for link in member.social_group %}
+              {% for link in team.social_group %}
               <a href="{{ link.url_field.href }}" target="_blank">
                 {{ link.icon }}
               </a>

@@ -21,7 +21,7 @@ body {
 }
 
 .page-wrap {
-    color: {{ theme.text_color.color }};
+    color: theme.text_color.color ;
     max-width: 1100px;
     margin: 0 auto;
     background-color: #ddd;
@@ -33,7 +33,7 @@ body {
     text-transform: uppercase;
     letter-spacing: .3em;
     background-color: #eee;
-    background: url({{ get_asset_url('../images/template-previews/home.jpg') }}) 0 39% no-repeat #333;
+    background: url( get_asset_url('../images/template-previews/home.jpg') ) 0 39% no-repeat #333;
     background-size: cover;
     color: #fff;
     padding: 1em 50% 1em 2em;

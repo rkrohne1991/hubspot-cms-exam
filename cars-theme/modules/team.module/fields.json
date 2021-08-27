@@ -31,8 +31,8 @@
   }
 }, {
   "id" : "e373bc08-fa52-28c1-c0cf-e24238fb887a",
-  "name" : "members_group",
-  "label" : "Member",
+  "name" : "team_group",
+  "label" : "Team",
   "required" : false,
   "locked" : false,
   "occurrence" : {

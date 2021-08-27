@@ -3,6 +3,6 @@
   "icon" : "fontawesome-5.14.0:People%20Carry:SOLID",
   "host_template_types" : [ "PAGE" ],
   "module_id" : 43191062246,
-  "label" : "Members",
+  "label" : "Team",
   "is_available_for_new_content" : true
 }
